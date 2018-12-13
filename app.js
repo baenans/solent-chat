@@ -23,6 +23,8 @@ function app() {
     // reference in the database instead of displaying the message in the UI
     _displayMessage(userName, messageText);
     _scrollToBottom();
+
+    _focusMessageInput();  // a11y: avoid loosing focus of the message input 
   }
 
   function loadMessages(snapshot) {
@@ -90,6 +92,13 @@ function app() {
    */
   function _scrollToBottom() {
     window.scrollTo(0, document.body.scrollHeight);
+  }
+
+  /**
+   * Avoid loosing focus of the text input after sending a message
+   */
+  function _focusMessageInput() {
+    document.getElementById('messageInput').focus();
   }
 
   /**
