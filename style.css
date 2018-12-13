@@ -1,0 +1,112 @@
+/* by @stephyx */
+html, body {
+  padding: 0px;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  padding-top: 64px;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  top: 0px;
+  width: 100%;
+  background-color: #26a69a;
+  padding: 15px 20px;
+  font-size: 30px;
+  color: white;
+}
+
+header .spaced-from-right {
+  margin-right: 30px;
+}
+
+main {
+  display: flex;
+  padding: 10px 20px;
+  flex-direction: column;
+  padding-bottom: 80px;
+}
+
+.app-name {
+  margin-top: .1em;
+}
+
+.message { 
+  display: flex;
+  padding: 10px;
+  margin: 5px 0px;
+  border-radius: 5px;
+  background-color: #f1f0f0;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background-color: #00000078;
+  color: white;
+  line-height: 40px;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.message-container {
+  margin-left: 10px;
+  color: #444950;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.message-container {
+  max-width: 290px;
+}
+
+.message-text {
+  max-width: 290px;
+  padding-top: .2em;
+}
+
+.username, .message-text {
+  margin-left: .5em;
+  margin-top: .2em;
+}
+
+footer {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  bottom: 0px;
+  width: 100%;
+  padding: 5px 10px;
+  background-color: white;
+  border-top: 1px solid #c9d0da;
+}
+
+footer input {
+  width: 74%;
+  font-size: 18px;
+  height: 30px;
+  margin-right: 10px;
+  outline: none;
+  border: none;
+}
+
+footer button {
+  width: 15%;
+  text-decoration: none;
+  color: #fff;
+  background-color: #26a69a;
+  text-align: center;
+  letter-spacing: .5px;
+  font-size: 15px;
+  border-radius: 7px;
+  margin-right: 15px;
+  padding: 10px;
+}
